@@ -1,8 +1,32 @@
 <!-- Crie um algoritmo que receba:
-a) O valor da conta (consumo)
-b) O número de clientes 
-
-Depois disso  calcule e mostre no console:
-a) O valor dos 10% (cota do garçom)
-b) O valor final da conta (consumo + 10%)
-c) O valor que cada cliente deve pagar -->
+    a) O valor da conta (consumo)
+    b) O número de clientes 
+    
+    Depois disso  calcule e mostre no console:
+    a) O valor dos 10% (cota do garçom)
+    b) O valor final da conta (consumo + 10%)
+    c) O valor que cada cliente deve pagar -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Exercicio 2</h1>
+        <script>
+            var conta= Number( prompt('Valor da conta'));
+            var clientes= Number(prompt('Quantidade de clientes'));
+            var gorjeta = Number(conta *0.10);
+            var valor_final=Number(conta + gorjeta);
+            var valor_cliente=Number(valor_final / clientes);
+            console.log('O valor da conta é: ' + conta);
+            console.log('A quantidade de clientes é:' + clientes);
+            console.log('O valor para o garçom é:' +gorjeta);
+            console.log('O valor final da conta é:'+ valor_final);
+            console.log('Cada cliente deve pagar: '+ valor_cliente);
+        </script>
+    </body>
+    </html>
