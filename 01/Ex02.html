@@ -19,14 +19,16 @@
         <script>
             var conta= Number( prompt('Valor da conta'));
             var clientes= Number(prompt('Quantidade de clientes'));
+
             var gorjeta = Number(conta *0.10);
             var valor_final=Number(conta + gorjeta);
             var valor_cliente=Number(valor_final / clientes);
+
             console.log('O valor da conta é: ' + conta);
             console.log('A quantidade de clientes é:' + clientes);
-            console.log('O valor para o garçom é:' +gorjeta);
+            console.log('O valor para o garçom é:' + gorjeta);
             console.log('O valor final da conta é:'+ valor_final);
-            console.log('Cada cliente deve pagar: '+ valor_cliente);
+            console.log('Cada cliente deve pagar: '+( valor_cliente).toFixed(2));
         </script>
     </body>
     </html>

@@ -20,9 +20,9 @@ Exemplo de saída:
             var preco=Number(prompt('Preço'));
             var pagamento_vista=Number(preco *0.10);
             var parcelas=Number (preco /3);
-            console.log('O preço é:' + preco);
-            console.log('Á vista:' + (preco - pagamento_vista));
-            console.log('Ou 3X de:' + parcelas);
+            console.log('O preço é: R$' + preco.toFixed(2));
+            console.log('Á vista: R$' + (preco - pagamento_vista));
+            console.log('Ou 3X de: R$' + (parcelas.toFixed(2)));
         </script>
     </body>
     </html>
